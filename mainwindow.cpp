@@ -51,7 +51,7 @@ void MainWindow::timerEvent(QTimerEvent *event)             // событие - 
         ui->label_lose->setText(QString::number(lose));}
                                                                     // Отображение сгенерированного числа
     checkpovtor=random;
-    random = 1+rand() % static_cast<int>(2);
+    random = 3+rand() % static_cast<int>(3);
     if(checkpovtor==random)                                         //Сгенерированое число повторилось
     {ui->label->setText(ui->label->text() + "!");}
     else                                                            //Сгенерировано отличное от предыдущего число
